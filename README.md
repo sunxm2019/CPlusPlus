@@ -21,17 +21,19 @@ TEST(TestCaseName, TestName){ <br>
   ASSERT_GT(a, b) // a>b <br>
   
 ・他の数値の比較 <br> 
-  ASSERT_FLOAT_EQ
-  ASSERT_DOUBLE_EQ
+  ASSERT_FLOAT_EQ <br>
+  ASSERT_DOUBLE_EQ <br>
   
-・文字列の比較 <br>  
+・文字列の比較 <br>
   ASSERT_STREQ(s1, s2) // s1 == s2 <br>
   ASSERT_STRNE(s1, s2) // s1 != s2 <br><br>
   ASSERT_STRCASEEQ(s1, s2)  // s1 == s2, ignoring case <br>
   ASSERT_STRCASENE(s1, s2)  // s1 != s2, ignoring case <br>
   
-・他の数値の比較 <br> 
-  ASSERT_FLOAT_EQ
+・例外処理 <br> 
+  ASSERT_THROW(statement,exception)
+  ASSERT_ANY_THROW(statement)
+  ASSERT_NO_THROW(statement)
 
 ## 3. namespace
 
